@@ -1,2 +1,3 @@
-# 1# Python
- Primeira repositorio python 
+# 1° Python
+ Primeiro repositorio python
+
