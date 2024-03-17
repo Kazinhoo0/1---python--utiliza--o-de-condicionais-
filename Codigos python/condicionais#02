@@ -1,0 +1,31 @@
+print("Este programa calcula quanto de juros você tera se comprar das diferentes formas abaixo.")
+
+print("-=" * 50)
+print("Digite o valor do seu produto abaixo, para fazermos o calculo.")
+valor = float(input("Qual o valor do produto: R$"))
+print("""Digite abaixo a sua condição de pagamento;
+      [1] á vista dinhero/cheque
+      [2] á vista
+      [3] 2x no cartão
+      [4] 3x ou mais no cartão""")
+print("-" * 50)
+pagamento = int(input("Qual a opção ? "))
+
+if  pagamento == 1 :
+    v = valor * (10/100)
+    v_1 = valor - v
+    print("O preço final do seu produto com o desconto é de R${:.3f}".format(v_1))  
+
+elif pagamento == 2 :
+    v = valor * (5/100)
+    v_1 = valor - v
+    print("O preço final do seu produto com o desconto é de {:.3f}".format(v_1))
+
+elif pagamento == 3 :
+    print("O preço final do seu produto com o desconto é de {:.3f}".format (valor))
+
+
+elif pagamento == 4 :
+    v = valor * (20/100)
+    juros = valor + v
+    print("O preço final do seu produto com o juros é de {:.3f}".format(juros))
